@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EcaxScript</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <h1 class="header-title">EcaxScript Search</h1>
+      <button class="button dark-mode-button" id="dark-mode-toggle" aria-label="Toggle Dark Mode">Dark Mode</button>
+    </div>
+  </header>
+  <main class="container">
+    <section class="search-section">
+      <form id="search-form" class="search-form" role="search">
+        <div class="form-group">
+          <label class="label" for="search-input">Search Scripts:</label>
+          <input class="input" type="search" id="search-input" placeholder="Search Script..." aria-label="Search Scripts">
+        </div>
+        <div class="form-group">
+          <label class="label" for="mode-select">Script Mode:</label>
+          <select class="select" id="mode-select" aria-label="Select Script Mode">
+            <option value="free">Free</option>
+            <option value="paid">Paid</option>
+          </select>
+        </div>
+        <button class="button search-button" type="submit" aria-label="Search">Search</button>
+      </form>
+    </section>
+    <section class="results-section">
+      <div class="results" id="results" aria-live="polite"></div>
+      <button class="button load-more-button" id="load-more" aria-label="Load More Results">Load More</button>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; Made By PlayerExploits And The #ECAXCOMUNITY.</p>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
